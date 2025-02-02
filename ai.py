@@ -11,20 +11,12 @@ aii_key = os.getenv('AII_KEY')
 openai_key = os.getenv('OPENAI_KEY')
 elevenlabs_key = os.getenv('ELEVENLABS_KEY')
 
-'''
-brew install portaudio
-pip install "assemblyai[extras]"
-pip install elevenlabs==0.3.0b0
-brew install mpv
-pip install --upgrade openai
-pip install python-dotenv
-'''
 
 class AI_Assistant:
     def __init__(self):
         aai.settings.api_key = aii_key
         self.openai_client = OpenAI(api_key=openai_key)
-        # self.eleven_client = ElevenLabs(api_key=elevenlabs_key)
+        self.elevenlabs_api_key = elevenlabs_key
 
         self.transcriber = None
 
