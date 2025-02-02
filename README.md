@@ -16,3 +16,5 @@ or
 ```bash
 python3 ai.py
 ```
+
+In the future, we will merge this with our current NomNom Chat Bot [here](https://github.com/PhucNguyen-rsc/NomNomChatBot).
